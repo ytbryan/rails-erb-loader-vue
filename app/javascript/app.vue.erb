@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <p>{{ message }}</p>
-    <%= image_tag "clinic.jpeg" %>
+    <% helpers = ActionController::Base.helpers %>
+    <%= helpers.image_tag "clinic.jpeg" %>
   </div>
 </template>
 
 <script>
+
 export default {
   data: function () {
     return {
